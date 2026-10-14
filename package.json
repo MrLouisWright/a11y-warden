@@ -1,0 +1,54 @@
+{
+  "name": "a11y-warden",
+  "version": "1.0.0",
+  "description": "WCAG 2.2 accessibility audit of static HTML for CI: alt text, form labels, button/link names, inline colour contrast, lang, title, landmarks, ARIA roles/references, aria-hidden focus traps, tabindex, iframe titles, zoom and autoplay, with a baseline file. SARIF, allowlist with expiry, GitHub Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "a11y-warden": "bin/a11y-warden.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "wcag",
+    "wcag22",
+    "alt-text",
+    "contrast",
+    "aria",
+    "static-site",
+    "sarif",
+    "github-action"
+  ],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/a11y-warden.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/a11y-warden/issues"
+  },
+  "homepage": "https://github.com/MrLouisWright/a11y-warden#readme"
+}
