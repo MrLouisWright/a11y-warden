@@ -1,5 +1,7 @@
 # a11y-warden
 
+[![npm version](https://img.shields.io/npm/v/a11y-warden.svg)](https://www.npmjs.com/package/a11y-warden) [![CI](https://github.com/MrLouisWright/a11y-warden/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/a11y-warden/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/a11y-warden.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > WCAG 2.2 accessibility audit of static HTML for CI, with a baseline so you can adopt it on an existing site and only fail on new problems.
 
 Most accessibility regressions are simple and machine-detectable: an image without alt text, an icon button with no name, a form field whose only label is its placeholder, grey-on-white text, a modal hidden with `aria-hidden` that still traps keyboard focus. `a11y-warden` reads every built HTML page, checks it against a focused set of WCAG 2.2 success criteria, and reports each problem with the file, line, severity, the criterion and a **concrete fix**. Record existing issues in a baseline file and CI fails only on new ones.
