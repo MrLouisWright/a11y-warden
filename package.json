@@ -1,6 +1,6 @@
 {
   "name": "a11y-warden",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WCAG 2.2 accessibility audit of static HTML for CI: alt text, form labels, button/link names, inline colour contrast, lang, title, landmarks, ARIA roles/references, aria-hidden focus traps, tabindex, iframe titles, zoom and autoplay, with a baseline file. SARIF, allowlist with expiry, GitHub Action. Zero deps.",
   "type": "module",
   "main": "./src/index.js",
