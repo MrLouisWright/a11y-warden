@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mrlouiswright.github.io/a11y-warden/sitemap.xml
