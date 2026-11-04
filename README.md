@@ -81,7 +81,7 @@ HIGH     index.html:3 <select name="s"> has no label [input-label-missing]
 ## Options
 
 ```text
-a11y-warden 1.0.0 — WCAG 2.2 audit of static HTML with baseline support
+a11y-warden 1.0.1 — WCAG 2.2 audit of static HTML with baseline support
 
 Usage: a11y-warden [site-dir] [options]
 
@@ -181,11 +181,19 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev a11y-warden
+```
+
 ```js
 import { check, contrastRatio, parseColor } from "a11y-warden";
 const report = check("dist");
 contrastRatio(parseColor("#767676"), parseColor("#fff")); // 4.54
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("a11y-warden")` from CommonJS.
 
 Types are included.
 
